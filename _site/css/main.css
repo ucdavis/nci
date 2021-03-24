@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "proxima-nova-r";
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: "proxima-nova-i";
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regularit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: "proxima-nova-b";
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: "ryman";
+  src: url("https://ucdcdn.azureedge.net/public/media/fonts/ryman-eco-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; }
+html {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  line-height: 1.5; }
+
+body {
+  font-family: "proxima-nova-r", Arial, sans-serif;
+  color: rgba(31, 31, 31, 0.99); }
+
+ul.no-list-style,
+ol.no-list-style {
+  list-style-type: none;
+  padding-left: 0px; }
+
+.discreet {
+  color: rgba(31, 31, 31, 0.4); }
+
+p {
+  line-height: 1.6; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "proxima-nova-r", Arial, sans-serif; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+.page-wrap {
+  flex: 1 0 auto; }
+
+.container {
+  padding: 0;
+  width: 94%; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 92%;
+      max-width: 100%; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 90%;
+      max-width: 1080px; } }
+
+.head_bleed {
+  background: #1e3a5b;
+  background: linear-gradient(to right, #1e3a5b 0%, #1e3a5b 44%, #dbbc5b 57%, #dbbc5b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient-one',endColorstr='$gradient-two',GradientType=1);
+  margin-top: -1px; }
+
+.head_divider {
+  background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
+  height: 26px; }
+
+footer {
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+  margin-top: 5%; }
+  footer .foot-icons {
+    margin-bottom: 8px; }
+    footer .foot-icons a {
+      padding: 0px 4px;
+      display: inline-block; }
+    footer .foot-icons button {
+      background-color: rgba(255, 255, 255, 5.0e-05);
+      border: none; }
+      footer .foot-icons button:focus {
+        outline: none; }
+
+.btn {
+  box-shadow: 0 0 0 1px rgba(49, 49, 93, 0.03), 0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
+
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 none; }
+
+.btn.active,
+.btn:active {
+  box-shadow: none; }
+
+.btn-ridge {
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.08); }
+  .btn-ridge:hover, .btn-ridge:active, .btn-ridge:focus {
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 3px 6px rgba(0, 0, 0, 0.08); }
+
+.btn-upward:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px); }
+
+.bg-recpool {
+  background-color: #6fcfeb; }
+
+.bg-tahoe {
+  background-color: #00b2e3; }
+
+.bg-gunrock {
+  background-color: #0047ba; }
+
+.bg-bodega {
+  background-color: #003a5d; }
+
+.bg-rain {
+  background-color: #03f9e6; }
+
+.bg-arboretum {
+  background-color: #00c4b3; }
+
+.bg-putahcreek {
+  background-color: #008eaa; }
+
+.bg-delta {
+  background-color: #00524c; }
+
+.bg-farm {
+  background-color: #aada91; }
+
+.bg-sage {
+  background-color: #6cca98; }
+
+.bg-quad {
+  background-color: #3dae2b; }
+
+.bg-redwood {
+  background-color: #266041; }
+
+.bg-goldenstate {
+  background-color: #ffff3b; }
+
+.bg-sunflower {
+  background-color: #ffdc00; }
+
+.bg-poppy {
+  background-color: #f18a00; }
+
+.bg-california {
+  background-color: #8a532f; }
+
+.bg-rose {
+  background-color: #ff8189; }
+
+.bg-strawberry {
+  background-color: #f93549; }
+
+.bg-doubledecker {
+  background-color: #c10230; }
+
+.bg-merlot {
+  background-color: #79242f; }
+
+.bg-thiebauldicing {
+  background-color: #f095cd; }
+
+.bg-redbud {
+  background-color: #c6007e; }
+
+.bg-pinot {
+  background-color: #76236c; }
+
+.bg-cabernet {
+  background-color: #481268; }
+
+.recpool {
+  color: #6fcfeb; }
+
+.tahoe {
+  color: #00b2e3; }
+
+.gunrock {
+  color: #0047ba; }
+
+.bodega {
+  color: #003a5d; }
+
+.rain {
+  color: #03f9e6; }
+
+.arboretum {
+  color: #00c4b3; }
+
+.putahcreek {
+  color: #008eaa; }
+
+.delta {
+  color: #00524c; }
+
+.farm {
+  color: #aada91; }
+
+.sage {
+  color: #6cca98; }
+
+.quad {
+  color: #3dae2b; }
+
+.redwood {
+  color: #266041; }
+
+.goldenstate {
+  color: #ffff3b; }
+
+.sunflower {
+  color: #ffdc00; }
+
+.poppy {
+  color: #f18a00; }
+
+.california {
+  color: #8a532f; }
+
+.rose {
+  color: #ff8189; }
+
+.strawberry {
+  color: #f93549; }
+
+.doubledecker {
+  color: #c10230; }
+
+.merlot {
+  color: #79242f; }
+
+.thiebauldicing {
+  color: #f095cd; }
+
+.redbud {
+  color: #c6007e; }
+
+.pinot {
+  color: #76236c; }
+
+.cabernet {
+  color: #481268; }
+
+.primary-font {
+  color: rgba(31, 31, 31, 0.99); }
+
+.secondary-font {
+  color: rgba(31, 31, 31, 0.8); }
+
+.tertiary-font {
+  color: rgba(31, 31, 31, 0.4); }

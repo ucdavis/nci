@@ -67,23 +67,40 @@ $redbud: #c6007e;
 $pinot: #76236c;
 $cabernet: #481268;
 
-$primary-color: #002855;
+$primary-color: $gunrock !default;
+$secondary-color: $poppy !default;
+
+$theme-colors: (
+  blue: $gunrock,
+  indigo: $cabernet,
+  purple: $pinot,
+  pink: $strawberry,
+  red: $doubledecker,
+  orange: $poppy,
+  yellow: $sunflower,
+  green: $quad,
+  teal: $arboretum,
+  cyan: $putahcreek,
+  success: $quad,
+  info: $recpool,
+  warning: $sunflower,
+  danger: $doubledecker,
+  light: #f8f9fa,
+  dark: #343a40,
+);
 
 $primary-font: rgba(31, 31, 31, 0.99); //
-$secondary-font: rgba(31, 31, 31, 0.66); //
+$secondary-font: rgba(31, 31, 31, 0.8); //
 $tertiary-font: rgba(31, 31, 31, 0.4); //
+$primary-white: rgba(2545, 2545, 2545, 0.95); //
+$secondary-white: rgba(2545, 2545, 2545, 0.8); //
 
-$dm-primary-font: rgba(245, 245, 245, 0.99); //
-$dm-secondary-font: rgba(245, 245, 245, 0.8); //
-$dm-tertiary-font: rgba(245, 245, 245, 0.4); //
+$borders: #c8c7cc; // border color
 
 $box-shadow: 0 0 0 1px rgba(49, 49, 93, 0.03), 0 2px 5px 0 rgba(49, 49, 93, 0.1),
   0 1px 2px 0 rgba(0, 0, 0, 0.08);
 
-$bg-color: rgba(221, 217, 168, 0.07); // background
-$borders: rgba(125, 125, 125, 0.2); // border color
-
-// Layouts
+// breakpoints
 
 @mixin breakpoint($point) {
   @if $point==sm {
@@ -125,56 +142,5 @@ $borders: rgba(125, 125, 125, 0.2); // border color
     @media (max-width: 1200px) {
       @content;
     }
-  }
-}
-
-@mixin main-btn {
-  white-space: nowrap;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.08);
-  background: $gold;
-  border-radius: 2px;
-  font-size: 1.6rem;
-  letter-spacing: 0.025em;
-  color: #fff !important;
-  text-decoration: none;
-  transition: all 0.15s ease;
-  border: none;
-  font-family: $sans-bold;
-  &:active,
-  &:focus {
-    background-color: darken($gold, 5);
-  }
-  &:hover {
-    color: #fff !important;
-    transform: translateY(-1px);
-    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset,
-      0 3px 6px rgba(0, 0, 0, 0.08);
-    background-color: lighten($gold, 5);
-    text-decoration: none;
-  }
-}
-
-@mixin inverse-btn {
-  white-space: nowrap;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-  background: rgba(0, 0, 0, 0.12);
-  font-size: 1.6rem;
-  letter-spacing: 0.025em;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.15s ease;
-  border: 1px solid #fff;
-  font-family: $sans-bold;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    color: #fff;
   }
 }

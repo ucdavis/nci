@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: $bg-color;
 }
 .page-wrap {
   flex: 1 0 auto;
@@ -63,8 +62,15 @@ body {
 .head_divider {
   background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
   height: 26px;
+  // i {
+  //   color:#fff;
+  //   background-color: $golden-lupine;
+  //   height:50px;
+  //   width:50px;
+  //   font-size:2.8rem;
+  //   border-radius:50%;
+  // }
 }
-
 footer {
   flex-shrink: 0;
   margin-bottom: 2rem;
