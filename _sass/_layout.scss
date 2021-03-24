@@ -16,23 +16,6 @@ body {
 .page-wrap {
   flex: 1 0 auto;
 }
-.container {
-  padding: 0;
-  width: 94%;
-
-  @include breakpoint(sm) {
-    max-width: 100%;
-  }
-  @include breakpoint(md) {
-    width: 92%;
-    max-width: 100%;
-  }
-  @include breakpoint(lg) {
-    width: 90%;
-    max-width: 1080px;
-  }
-}
-
 .head_bleed {
   background: #1e3a5b;
   background: -moz-linear-gradient(
@@ -71,6 +54,12 @@ body {
   //   border-radius:50%;
   // }
 }
+// .content-wrap {
+//   background-color: #fff;
+//   border-radius: 2px;
+//   border: $borders;
+//   padding: 16px;
+// }
 footer {
   flex-shrink: 0;
   margin-bottom: 2rem;

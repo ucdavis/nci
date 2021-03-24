@@ -66,21 +66,6 @@ body {
 .page-wrap {
   flex: 1 0 auto; }
 
-.container {
-  padding: 0;
-  width: 94%; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 100%; } }
-  @media (min-width: 768px) {
-    .container {
-      width: 92%;
-      max-width: 100%; } }
-  @media (min-width: 992px) {
-    .container {
-      width: 90%;
-      max-width: 1080px; } }
-
 .head_bleed {
   background: #1e3a5b;
   background: linear-gradient(to right, #1e3a5b 0%, #1e3a5b 44%, #dbbc5b 57%, #dbbc5b 100%);
@@ -279,3 +264,21 @@ footer {
 
 .tertiary-font {
   color: rgba(31, 31, 31, 0.4); }
+
+.featured-image::before {
+  background-color: #00c4b3;
+  content: "";
+  position: absolute;
+  top: 10%;
+  width: 599px;
+  height: 399px;
+  z-index: -1;
+  pointer-events: none;
+  left: 52%; }
+
+.instructions {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  font-style: italic; }
+  .ips-color .instructions {
+    background-color: rgba(0, 196, 179, 0.2); }

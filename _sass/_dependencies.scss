@@ -70,30 +70,15 @@ $cabernet: #481268;
 $primary-color: $gunrock !default;
 $secondary-color: $poppy !default;
 
-$theme-colors: (
-  blue: $gunrock,
-  indigo: $cabernet,
-  purple: $pinot,
-  pink: $strawberry,
-  red: $doubledecker,
-  orange: $poppy,
-  yellow: $sunflower,
-  green: $quad,
-  teal: $arboretum,
-  cyan: $putahcreek,
-  success: $quad,
-  info: $recpool,
-  warning: $sunflower,
-  danger: $doubledecker,
-  light: #f8f9fa,
-  dark: #343a40,
-);
-
 $primary-font: rgba(31, 31, 31, 0.99); //
 $secondary-font: rgba(31, 31, 31, 0.8); //
 $tertiary-font: rgba(31, 31, 31, 0.4); //
 $primary-white: rgba(2545, 2545, 2545, 0.95); //
 $secondary-white: rgba(2545, 2545, 2545, 0.8); //
+
+$bg-color: #e5e9ef;
+
+$ips: $arboretum;
 
 $borders: #c8c7cc; // border color
 
