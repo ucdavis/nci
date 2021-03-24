@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- le Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="image_src" href="/media/thumbnail.jpg" />
+  <meta property="og:image" content="/media/thumbnail.jpg" />
+  <link rel="shortcut icon" href="/media/favicon.ico" />
+
+  <title>ESP 50th Anniversary Site - 404</title>
+  <meta
+    name="description"
+    content="Celebrating the Department of Environmental Science and Policy 50 years at UC Davis
+"
+  />
+
+  <!-- le Apple -->
+  <link rel="apple-touch-icon" href="/media/thumbnail.jpg" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/media/76-icon.jpg" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/media/120-icon.jpg" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/media/156-icon.jpg" />
+
+  <!-- le CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link
+    rel="canonical"
+    href="http://localhost:4000/404.html"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="ESP 50th Anniversary Site"
+    href="http://localhost:4000"
+  />
+
+  <!-- le JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+  <body>
+    <!-- Dark mode saved -->
+    <script>
+      function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+      }
+
+      if (getCookie('darkmode') === '1') {
+          var body = document.getElementsByTagName('body')[0];
+          body.className += ' darkmode';
+      }
+  </script>
+    <div class="page-wrap">
+
+
+      <div class="col">
+  <h2>Aww man we can't find the page you are looking for</h2>
+  <div class="image-wrapper">
+      <img src="/media/404.gif" alt="" />
+  </div>
+  <p>Looks like you've taken a wrong turn friend, click <a href="/">here</a> to return to a safe haven</p>
+
+</div>
+
+    </div>
+
+
+
+    <footer class="text-center">
+  <div class="foot-icons">
+    <a target="_blank" href="https://caes.ucdavis.edu">
+      <img src="/media/caes-footer.svg" alt="CAES logo" />
+    </a>
+    <a target="_blank" href="https://github.com/ucdavis/esp50">
+      <img src="/media/github-footer.svg" alt="Github logo" />
+    </a>
+  </div>
+  <p class="discreet">
+    &copy; Copyright
+    <script language="JavaScript" type="text/javascript">
+      now = new Date();
+      theYear = now.getYear();
+      if (theYear < 1900) theYear = theYear + 1900;
+      document.write(theYear);
+    </script>
+
+    The Regents of the University of California, Davis campus. All rights
+    reserved.
+  </p>
+</footer>
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="/js/cssbrowserselector.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script>
+  $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
+  <!-- dark mode toggle -->
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script>
+    $("#dm-toggle").click(function() {
+        $("body").toggleClass("darkmode");
+        $("body").addClass('fader');
+        var isDarkMode = Cookies.get('darkmode');
+        if (isDarkMode === '1') {
+            Cookies.set('darkmode', '0', { expires: 1 });
+        } else {
+            Cookies.set('darkmode', '1', { expires: 1 });
+        }
+    });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157073175-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157073175-1');
+</script>
+
+</body>
+</html>
