@@ -89,6 +89,8 @@ body {
     text-transform: uppercase; }
     .tableau-wrapper .main-nav-item.active {
       color: #fff; }
+  .tableau-wrapper .subnavcontent {
+    width: 100%; }
 
 footer {
   flex-shrink: 0;
@@ -279,20 +281,13 @@ footer {
 .tertiary-font {
   color: rgba(31, 31, 31, 0.4); }
 
-.featured-image::before {
-  background-color: #00c4b3;
-  content: "";
-  position: absolute;
-  top: 10%;
-  width: 599px;
-  height: 399px;
-  z-index: -1;
-  pointer-events: none;
-  left: 52%; }
-
 .instructions {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 16px;
   font-style: italic; }
   .ips-color .instructions {
     background-color: rgba(0, 196, 179, 0.2); }
+
+.ips-color .featured-image img {
+  border-top: 16px solid #00c4b3;
+  border-right: 16px solid #00c4b3; }

@@ -179,22 +179,28 @@
 .tertiary-font {
   color: $tertiary-font;
 }
-.featured-image::before {
-  background-color: $ips;
-  content: "";
-  position: absolute;
-  top: 10%;
-  width: 599px;
-  height: 399px;
-  z-index: -1;
-  pointer-events: none;
-  left: 52%;
-}
+// .featured-image::before {
+//   background-color: $ips;
+//   content: "";
+//   position: absolute;
+//   top: 10%;
+//   width: 599px;
+//   height: 399px;
+//   z-index: -1;
+//   pointer-events: none;
+//   left: 52%;
+// }
 .instructions {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 16px;
   font-style: italic;
   .ips-color & {
     background-color: transparentize($ips, 0.8);
+  }
+}
+.featured-image {
+  .ips-color & img {
+    border-top: 16px solid $ips;
+    border-right: 16px solid $ips;
   }
 }
