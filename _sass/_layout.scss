@@ -60,6 +60,24 @@ body {
 //   border: $borders;
 //   padding: 16px;
 // }
+.tableau-wrapper {
+  margin-top: 5%;
+  .ips-color & .main-nav-item {
+    background-color: $ips;
+    &.active {
+      background-color: darken($ips, 5);
+    }
+  }
+  .main-nav-item {
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    &.active {
+      color: #fff;
+    }
+  }
+}
 footer {
   flex-shrink: 0;
   margin-bottom: 2rem;

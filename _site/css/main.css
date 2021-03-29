@@ -76,6 +76,20 @@ body {
   background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
   height: 26px; }
 
+.tableau-wrapper {
+  margin-top: 5%; }
+  .ips-color .tableau-wrapper .main-nav-item {
+    background-color: #00c4b3; }
+    .ips-color .tableau-wrapper .main-nav-item.active {
+      background-color: #00ab9c; }
+  .tableau-wrapper .main-nav-item {
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase; }
+    .tableau-wrapper .main-nav-item.active {
+      color: #fff; }
+
 footer {
   flex-shrink: 0;
   margin-bottom: 2rem;
