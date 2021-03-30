@@ -63,47 +63,85 @@ body {
 .tableau-wrapper {
   margin-top: 5%;
   box-shadow: $box-shadow;
-  .ips-color & .main-nav-item {
-    background-color: $ips;
-    &.active {
-      background-color: darken($ips, 5);
+}
+.mainnav-menu {
+  .mainnav-item {
+    button {
+      border-radius: 0px;
+    }
+    &:first-child button {
+      border-top-left-radius: 4px;
+    }
+    &:last-child button {
+      border-top-right-radius: 4px;
     }
   }
-  .main-nav-item {
+  .mainnav-link {
     color: #fff;
     border: none;
     font-size: 1rem;
+    font-family: $sans-bold;
     text-transform: uppercase;
+    .ips-color & {
+      background-color: $ips;
+      &:hover {
+        background-color: darken($ips, 3);
+      }
+      &.active {
+        background-color: darken($ips, 5);
+      }
+    }
     &.active {
       color: #fff;
     }
   }
-  .subnavcontent {
-    width: 100%;
+}
+
+.subnav-menu {
+  border-right: 1px solid $borders;
+  .ips-color & {
+    background-color: $ips-bg;
   }
-  .subnav-menu {
-    border-right: 1px solid $borders;
-    li {
-      border-bottom: 1px solid $borders;
+  li {
+    border-bottom: 1px solid $borders;
+  }
+  .subnav-link {
+    color: $primary-font;
+    border-right: 4px solid rgba(255, 255, 255, 0.00005);
+    border-radius: 0;
+    border: none;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+    &.active::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #000;
     }
-    .subnav-link {
-      color: $primary-font;
-      border-right: 4px solid rgba(255, 255, 255, 0.00005);
-      border-radius: 0;
-      border: none;
-      text-align: left;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      .ips-color & {
-        background-color: transparentize($ips, 0.8);
-        width: 100%;
-        &.active {
-          color: $ips;
-          border-right: 4px solid $ips;
+    .ips-color & {
+      background-color: $ips-bg;
+      width: 100%;
+      &.active {
+        color: $ips;
+        border-right: 4px solid $ips;
+        &::before {
+          background-color: $ips;
         }
+      }
+      &:hover {
+        background-color: transparentize($ips, 0.5);
       }
     }
   }
+}
+.subnav-content {
+  width: 100%;
+  padding: 16px;
 }
 footer {
   flex-shrink: 0;

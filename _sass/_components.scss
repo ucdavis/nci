@@ -195,7 +195,7 @@
   padding: 16px;
   font-style: italic;
   .ips-color & {
-    background-color: transparentize($ips, 0.8);
+    background-color: $ips-bg;
   }
 }
 .featured-image {
