@@ -62,6 +62,7 @@ body {
 // }
 .tableau-wrapper {
   margin-top: 5%;
+  box-shadow: $box-shadow;
   .ips-color & .main-nav-item {
     background-color: $ips;
     &.active {
@@ -79,6 +80,29 @@ body {
   }
   .subnavcontent {
     width: 100%;
+  }
+  .subnav-menu {
+    border-right: 1px solid $borders;
+    li {
+      border-bottom: 1px solid $borders;
+    }
+    .subnav-link {
+      color: $primary-font;
+      border-right: 4px solid rgba(255, 255, 255, 0.00005);
+      border-radius: 0;
+      border: none;
+      text-align: left;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      .ips-color & {
+        background-color: transparentize($ips, 0.8);
+        width: 100%;
+        &.active {
+          color: $ips;
+          border-right: 4px solid $ips;
+        }
+      }
+    }
   }
 }
 footer {

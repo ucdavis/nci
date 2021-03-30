@@ -77,7 +77,8 @@ body {
   height: 26px; }
 
 .tableau-wrapper {
-  margin-top: 5%; }
+  margin-top: 5%;
+  box-shadow: 0 0 0 1px rgba(49, 49, 93, 0.03), 0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
   .ips-color .tableau-wrapper .main-nav-item {
     background-color: #00c4b3; }
     .ips-color .tableau-wrapper .main-nav-item.active {
@@ -91,6 +92,24 @@ body {
       color: #fff; }
   .tableau-wrapper .subnavcontent {
     width: 100%; }
+  .tableau-wrapper .subnav-menu {
+    border-right: 1px solid #cecece; }
+    .tableau-wrapper .subnav-menu li {
+      border-bottom: 1px solid #cecece; }
+    .tableau-wrapper .subnav-menu .subnav-link {
+      color: rgba(31, 31, 31, 0.99);
+      border-right: 4px solid rgba(255, 255, 255, 5.0e-05);
+      border-radius: 0;
+      border: none;
+      text-align: left;
+      padding-top: 12px;
+      padding-bottom: 12px; }
+      .ips-color .tableau-wrapper .subnav-menu .subnav-link {
+        background-color: rgba(0, 196, 179, 0.2);
+        width: 100%; }
+        .ips-color .tableau-wrapper .subnav-menu .subnav-link.active {
+          color: #00c4b3;
+          border-right: 4px solid #00c4b3; }
 
 footer {
   flex-shrink: 0;
