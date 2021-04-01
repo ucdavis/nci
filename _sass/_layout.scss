@@ -115,23 +115,23 @@ body {
     padding-bottom: 12px;
     font-weight: bold;
     margin-bottom: 0 !important;
-    &.active::before {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
-      background-color: #000;
-    }
+    // &.active::before {
+    //   content: "";
+    //   display: inline-block;
+    //   width: 10px;
+    //   height: 10px;
+    //   border-radius: 5px;
+    //   background-color: #000;
+    // }
     .ips-color & {
       background-color: $ips-bg;
       width: 100%;
       &.active {
         color: $ips;
         border-right: 4px solid $ips;
-        &::before {
-          background-color: $ips;
-        }
+        // &::before {
+        //   background-color: $ips;
+        // }
       }
       &:hover {
         background-color: transparentize($ips, 0.5);

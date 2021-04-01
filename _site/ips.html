@@ -126,17 +126,17 @@
         right footer of the dashboard.
       </p>
     </div>
-    <div class="col-md-6 featured-image">
-      <img src="/media/ips-main.jpg" alt="Girl standing in a classroom" />
+    <div class="col-md-5 offset-md-1 featured-image">
+      <img
+        class="img-fluid"
+        src="/media/ips-main.jpg"
+        alt="Girl standing in a classroom"
+      />
     </div>
   </div>
 </div>
 <div class="tableau-wrapper">
-  <ul
-    class="nav mainnav-menu nav-tabs nav-fill"
-    id="ips-mainnav"
-    role="tablist"
-  >
+  <ul class="nav mainnav-menu nav-tabs nav-fill" id="ipsMainnav" role="tablist">
     <li class="nav-item mainnav-item" role="presentation">
       <button
         class="nav-link mainnav-link active"
@@ -194,7 +194,7 @@
       </button>
     </li>
   </ul>
-  <div class="tab-content" id="ips-mainnav">
+  <div class="tab-content" id="ipsMainnavContent">
     <div
       class="tab-pane fade show active"
       id="demographics"
@@ -203,8 +203,8 @@
     >
       <div class="d-flex justify-content-between">
   <ul
-    class="nav subnav-menu nav-tabs flex-column"
-    id="ips-demographics"
+    class="nav subnav-menu flex-column nav-tabs"
+    id="ipsDemographics"
     role="tablist"
   >
     <li class="nav-item" role="presentation">
@@ -306,7 +306,7 @@
       </button>
     </li>
   </ul>
-  <div class="tab-content subnav-content" id="demographics">
+  <div class="tab-content subnav-content" id="ipsDemographicsContent">
     <div
       class="tab-pane fade show active"
       id="mentalillness"
@@ -340,33 +340,65 @@
           <param name="language" value="en" />
           <param name="filter" value="publish=yes" />
         </object>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1617136322558");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
       </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1617136322558");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-      <div
-        class="tab-pane fade"
-        id="diagnoses"
-        role="tabpanel"
-        aria-labelledby="diagnoses-tab"
-      >
-        doo
-      </div>
-      <div
-        class="tab-pane fade"
-        id="health"
-        role="tabpanel"
-        aria-labelledby="health-tab"
-      >
-        twa
-      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="diagnoses"
+      role="tabpanel"
+      aria-labelledby="diagnoses-tab"
+    >
+      diagnoses
+    </div>
+    <div
+      class="tab-pane fade"
+      id="health"
+      role="tabpanel"
+      aria-labelledby="health-tab"
+    >
+      health
+    </div>
+    <div
+      class="tab-pane fade"
+      id="personalcharacteristics"
+      role="tabpanel"
+      aria-labelledby="personalcharacteristics-tab"
+    >
+      personal Characteristics
+    </div>
+    <div
+      class="tab-pane fade"
+      id="relationships"
+      role="tabpanel"
+      aria-labelledby="relationships-tab"
+    >
+      relationships
+    </div>
+    <div
+      class="tab-pane fade"
+      id="behaviormobilitycommunications"
+      role="tabpanel"
+      aria-labelledby="behaviormobilitycommunications-tab"
+    >
+      Behav
+    </div>
+    <div
+      class="tab-pane fade"
+      id="housing"
+      role="tabpanel"
+      aria-labelledby="housing-tab"
+    >
+      Housing
     </div>
   </div>
 </div>
@@ -378,7 +410,7 @@
       role="tabpanel"
       aria-labelledby="systemperformance-tab"
     >
-      placeholder
+      system performance content
     </div>
     <div
       class="tab-pane fade"
@@ -386,7 +418,7 @@
       role="tabpanel"
       aria-labelledby="individualoutcomes-tab"
     >
-      placeholder
+      Individual Outcomes content
     </div>
     <div
       class="tab-pane fade"
@@ -394,7 +426,7 @@
       role="tabpanel"
       aria-labelledby="healthwelfarerights-tab"
     >
-      placeholder
+      Health content
     </div>
   </div>
 </div>

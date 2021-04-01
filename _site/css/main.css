@@ -117,21 +117,12 @@ body {
     padding-bottom: 12px;
     font-weight: bold;
     margin-bottom: 0 !important; }
-    .subnav-menu .subnav-link.active::before {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
-      background-color: #000; }
     .ips-color .subnav-menu .subnav-link {
       background-color: #e7faf8;
       width: 100%; }
       .ips-color .subnav-menu .subnav-link.active {
         color: #00c4b3;
         border-right: 4px solid #00c4b3; }
-        .ips-color .subnav-menu .subnav-link.active::before {
-          background-color: #00c4b3; }
       .ips-color .subnav-menu .subnav-link:hover {
         background-color: rgba(0, 196, 179, 0.5); }
 
