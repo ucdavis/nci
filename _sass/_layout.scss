@@ -64,6 +64,12 @@ body {
   margin-top: 5%;
   box-shadow: $box-shadow;
 }
+header {
+  margin-top: 2%;
+  img {
+    margin-bottom: 1%;
+  }
+}
 .mainnav-menu {
   .mainnav-item {
     button {
