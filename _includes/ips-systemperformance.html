@@ -10,7 +10,7 @@
         id="accessculturalcompetencyservicecoordination-tab"
         data-bs-toggle="tab"
         data-bs-target="#accessculturalcompetencyservicecoordination"
-        data-viz="1618938164316"
+        data-viz="1618955625474"
         type="button"
         role="tab"
         aria-controls="accessculturalcompetencyservicecoordination"
@@ -25,6 +25,7 @@
         id="servicesreceived-tab"
         data-bs-toggle="tab"
         data-bs-target="#servicesreceived"
+        data-viz="1618956000028"
         type="button"
         role="tab"
         aria-controls="servicesreceived"
@@ -39,6 +40,7 @@
         id="servicesneeded-tab"
         data-bs-toggle="tab"
         data-bs-target="#servicesneeded"
+        data-viz="1618956248111"
         type="button"
         role="tab"
         aria-controls="servicesneeded"
@@ -50,19 +52,19 @@
   </ul>
   <div class="tab-content subnav-content" id="ipsSystemperformanceContent">
     <div
-      class="tab-pane fade show active"
+      class="tab-pane fade show active testdiv"
       id="accessculturalcompetencyservicecoordination"
       role="tabpanel"
       aria-labelledby="accessculturalcompetencyservicecoordination-tab"
     ></div>
-
+    <div id="viz1618955625474"></div>
     <div
       class="tab-pane fade"
       id="servicesreceived"
       role="tabpanel"
       aria-labelledby="servicesreceived-tab"
     >
-      sercices
+      <div id="viz1618956000028"></div>
     </div>
     <div
       class="tab-pane fade"
@@ -70,12 +72,16 @@
       role="tabpanel"
       aria-labelledby="servicesneeded-tab"
     >
-      health
+      <div id="viz1618956248111"></div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
   $(".subnav-link").click(function () {
-    alert("a subnav tab was clicked");
+    const vizID = $(this).attr("data-viz");
+    var $visDiv = $("#viz" + vizID);
+    if ($visDiv.is(":empty")) {
+      $visDiv.append($("<p id='test'>My <em>new</em> text</p>"));
+    }
   });
 </script>
