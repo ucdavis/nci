@@ -70,6 +70,10 @@ header {
     margin-bottom: 1%;
   }
 }
+.container-sm {
+  margin: 0 auto;
+  max-width: 700px;
+}
 .mainnav-menu {
   .mainnav-item {
     button {
@@ -102,7 +106,45 @@ header {
     }
   }
 }
-
+.block-chooser {
+  margin-top: 5%;
+}
+.inactive-block {
+  opacity: 0.25;
+  a {
+    cursor: pointer;
+  }
+}
+.nci-ctablock {
+  img {
+    display: block;
+    padding-bottom: 12px;
+  }
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: $sans-bold;
+    padding-top: 8px;
+    color: #fff;
+  }
+  border: 10px solid orange;
+}
+.nci-ctablock-ips {
+  border-color: $ips;
+  background-color: $ips;
+}
+.nci-ctablock-afs {
+  border-color: $afs;
+  background-color: $afs;
+}
+.nci-ctablock-fgs {
+  border-color: $fgs;
+  background-color: $fgs;
+}
+.nci-ctablock-cfs {
+  border-color: $cfs;
+  background-color: $cfs;
+}
 .subnav-menu {
   border-right: 1px solid $borders;
   .ips-color & {

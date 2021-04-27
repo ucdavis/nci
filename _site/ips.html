@@ -56,6 +56,10 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"
   ></script>
+  <script
+    type="text/javascript"
+    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+  ></script>
 
   <!-- hide from google -->
   <meta name="robots" content="noindex" />
@@ -65,30 +69,27 @@
     <!-- Dark mode saved -->
     <script>
       function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
           var c = ca[i];
-          while (c.charAt(0) == ' ') {
-          c = c.substring(1);
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
           }
           if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
+            return c.substring(name.length, c.length);
           }
-      }
-      return "";
+        }
+        return "";
       }
 
-      if (getCookie('darkmode') === '1') {
-          var body = document.getElementsByTagName('body')[0];
-          body.className += ' darkmode';
+      if (getCookie("darkmode") === "1") {
+        var body = document.getElementsByTagName("body")[0];
+        body.className += " darkmode";
       }
-  </script>
-    <div class="page-wrap">
-
-
-      <header class="container text-center">
+    </script>
+    <div class="page-wrap"><header class="container text-center">
   <img src="/media/top-logos.png" alt="logos for UC Davis and DDS" />
   <h1>NCI Interactive Dashboard</h1>
   <p class="lede">tagline</p>
@@ -318,279 +319,43 @@
       id="mentalillness"
       role="tabpanel"
       aria-labelledby="mentalillness-tab"
-    >
-      <div
-        class="tableauPlaceholder"
-        id="viz1617136322558"
-        style="position: relative"
-      >
-        <object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param
-            name="name"
-            value="nci3_ips_demographics-mental&#47;nci3-ips-demographics-mental"
-          />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-mental&#47;nci3-ips-demographics-mental&#47;1.png"
-          />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en" />
-          <param name="filter" value="publish=yes" />
-        </object>
-        <script type="text/javascript">
-          var divElement = document.getElementById("viz1617136322558");
-          var vizElement = divElement.getElementsByTagName("object")[0];
-          vizElement.style.width = "100%";
-          vizElement.style.height = "1427px";
-          var scriptElement = document.createElement("script");
-          scriptElement.src =
-            "https://public.tableau.com/javascripts/api/viz_v1.js";
-          vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-      </div>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="diagnoses"
       role="tabpanel"
       aria-labelledby="diagnoses-tab"
-    >
-      <!-- jquery to onclick to populate a div 
-    How to attach click handler to a page
-    test it
-    in that callback populate a div -->
-      <div
-        class="tableauPlaceholder"
-        id="viz1618935926727"
-        style="position: relative"
-      >
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-diagnoses "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-diagnoses&#47;nci3-ips-demographics-diagnoses&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param
-            name="name"
-            value="nci3_ips_demographics-diagnoses&#47;nci3-ips-demographics-diagnoses"
-          />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-diagnoses&#47;nci3-ips-demographics-diagnoses&#47;1.png"
-          />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1618935926727");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "1427px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="health"
       role="tabpanel"
       aria-labelledby="health-tab"
-    >
-      <div id="viz1618869054786">
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-health "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-health&#47;nci3-ips-demographics-health&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param
-            name="name"
-            value="nci3_ips_demographics-health&#47;nci3-ips-demographics-health"
-          />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-health&#47;nci3-ips-demographics-health&#47;1.png"
-          />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-        </object>
-      </div>
-      <script>
-        var divElement = document.getElementById("viz1618869054786");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "1427px";
-      </script>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="personalcharacteristics"
       role="tabpanel"
       aria-labelledby="personalcharacteristics-tab"
-    >
-      <div id="viz1618870839725">
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-characteristics "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-characteristics&#47;nci3-ips-demographics-characteristics&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param
-            name="name"
-            value="nci3_ips_demographics-characteristics&#47;nci3-ips-demographics-characteristics"
-          />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-characteristics&#47;nci3-ips-demographics-characteristics&#47;1.png"
-          />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1618870839725");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "1427px";
-      </script>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="relationships"
       role="tabpanel"
       aria-labelledby="relationships-tab"
-    >
-      <div
-        class="tableauPlaceholder"
-        id="viz1618935178653"
-        style="position: relative"
-      >
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-relationships "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-relationships&#47;nci3-ips-demographics-relationships&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param
-            name="name"
-            value="nci3_ips_demographics-relationships&#47;nci3-ips-demographics-relationships"
-          />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-relationships&#47;nci3-ips-demographics-relationships&#47;1.png"
-          />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1618935178653");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.minWidth = "600px";
-        vizElement.style.width = "100%";
-        vizElement.style.minHeight = "1427px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="behaviormobilitycommunications"
       role="tabpanel"
       aria-labelledby="behaviormobilitycommunications-tab"
-    >
-      <div id="viz1618871307758">
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-behaviors "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-behaviors&#47;nci3-ips-demographics-behaviors&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param
-            name="name"
-            value="nci3_ips_demographics-behaviors&#47;nci3-ips-demographics-behaviors"
-          />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-behaviors&#47;nci3-ips-demographics-behaviors&#47;1.png"
-          />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1618871307758");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "1427px";
-      </script>
-    </div>
+    ></div>
     <div
       class="tab-pane fade"
       id="housing"
       role="tabpanel"
       aria-labelledby="housing-tab"
-    >
-      <div id="viz1618871409296">
-        <noscript
-          ><a href="#"
-            ><img
-              alt="nci3-ips-demographics-housing "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-housing&#47;nci3-ips-demographics-housing&#47;1_rss.png"
-              style="border: none" /></a></noscript
-        ><object class="tableauViz" style="display: none">
-          <param
-            name="name"
-            value="nci3_ips_demographics-housing&#47;nci3-ips-demographics-housing"
-          />
-          <param
-            name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nc&#47;nci3_ips_demographics-housing&#47;nci3-ips-demographics-housing&#47;1.png"
-          />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1618871409296");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "1427px";
-      </script>
-    </div>
+    ></div>
   </div>
 </div>
 
@@ -629,6 +394,7 @@
         data-bs-toggle="tab"
         data-bs-target="#servicesreceived"
         data-viz="1618956000028"
+        data-url="https://public.tableau.com/views/nci3_ips_system-received/nci3-ips-system-received?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="servicesreceived"
@@ -636,6 +402,7 @@
       >
         Services Received
       </button>
+      <!-- onclick="initViz();" -->
     </li>
     <li class="nav-item" role="presentation">
       <button
@@ -644,6 +411,7 @@
         data-bs-toggle="tab"
         data-bs-target="#servicesneeded"
         data-viz="1618956248111"
+        data-url="https://public.tableau.com/views/nci3_ips_system-need/nci3-ips-system-need?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="servicesneeded"
@@ -655,19 +423,18 @@
   </ul>
   <div class="tab-content subnav-content" id="ipsSystemperformanceContent">
     <div
-      class="tab-pane fade show active testdiv"
+      class="tab-pane fade show active testdiv viz-1619456120034"
       id="accessculturalcompetencyservicecoordination"
       role="tabpanel"
       aria-labelledby="accessculturalcompetencyservicecoordination-tab"
     ></div>
-    <div id="viz1618955625474"></div>
     <div
       class="tab-pane fade"
       id="servicesreceived"
       role="tabpanel"
       aria-labelledby="servicesreceived-tab"
     >
-      <div id="viz1618956000028"></div>
+      <div id="viz1618956000028" style="width: 100%; height: 1427px"></div>
     </div>
     <div
       class="tab-pane fade"
@@ -675,17 +442,54 @@
       role="tabpanel"
       aria-labelledby="servicesneeded-tab"
     >
-      <div id="viz1618956248111"></div>
+      <div id="viz1618956248111" style="width: 100%; height: 1427px"></div>
     </div>
   </div>
 </div>
+<!-- <script type="text/javascript">
+  function initViz() {
+    const vizID = $(this).attr("data-viz");
+    const vizURL = $(this).attr("data-url");
+    var $visDiv = $("#viz" + vizID);
+    var containerDiv = document.getElementById("#viz" + vizID);
+    var viz = new tableau.Viz(containerDiv, vizURL);
+    if (containerDiv.is(":empty")) {
+      containerDiv.append(vizURL);
+    }
+  }
+</script> -->
+
+<!-- <script type="text/javascript">
+  $(".subnav-link").click(function () {
+    const vizID = "#viz1618956000028";
+    const vizURL =
+      "https://public.tableau.com/views/nci3_ips_system-received/nci3-ips-system-received?:language=en&:display_count=y&publish=yes";
+    var $visDiv = $("#viz" + vizID);
+
+    var viz = new tableau.Viz(vizID, vizURL);
+  });
+</script> -->
+
+<!-- Works -->
+<!-- <script type="text/javascript">
+  $(".subnav-link").click(function () {
+    var containerDiv = document.getElementById("viz1618956000028"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system-received/nci3-ips-system-received?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script> -->
+
 <script type="text/javascript">
   $(".subnav-link").click(function () {
     const vizID = $(this).attr("data-viz");
-    var $visDiv = $("#viz" + vizID);
-    if ($visDiv.is(":empty")) {
-      $visDiv.append($("<p id='test'>My <em>new</em> text</p>"));
-    }
+    const vizURL = $(this).attr("data-url");
+    var $visDiv = $("viz" + vizID);
+    var containerDiv = document.getElementById($visDiv),
+      url = vizURL;
+
+    var viz = new tableau.Viz(containerDiv, url);
   });
 </script>
 
@@ -1065,10 +869,7 @@
 </div>
 
 </div>
-
-    </div>
-
-
+</div>
 
     <footer class="text-center">
   <div class="foot-icons">
@@ -1094,41 +895,56 @@
 </footer>
 
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="/js/cssbrowserselector.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-  <script src="/js/cssbrowserselector.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <script>
-  $(function () {
-$('[data-toggle="tooltip"]').tooltip()
-})
-  </script>
-  <!-- dark mode toggle -->
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script>
-    $("#dm-toggle").click(function() {
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <!-- dark mode toggle -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script>
+      $("#dm-toggle").click(function () {
         $("body").toggleClass("darkmode");
-        $("body").addClass('fader');
-        var isDarkMode = Cookies.get('darkmode');
-        if (isDarkMode === '1') {
-            Cookies.set('darkmode', '0', { expires: 1 });
+        $("body").addClass("fader");
+        var isDarkMode = Cookies.get("darkmode");
+        if (isDarkMode === "1") {
+          Cookies.set("darkmode", "0", { expires: 1 });
         } else {
-            Cookies.set('darkmode', '1', { expires: 1 });
+          Cookies.set("darkmode", "1", { expires: 1 });
         }
-    });
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157073175-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-157073175-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-157073175-1');
-</script>
-
-</body>
+      gtag("config", "UA-157073175-1");
+    </script>
+  </body>
 </html>

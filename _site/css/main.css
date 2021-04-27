@@ -85,6 +85,10 @@ header {
   header img {
     margin-bottom: 1%; }
 
+.container-sm {
+  margin: 0 auto;
+  max-width: 700px; }
+
 .mainnav-menu .mainnav-item button {
   border-radius: 0px; }
 .mainnav-menu .mainnav-item:first-child button {
@@ -105,6 +109,42 @@ header {
       background-color: #00ab9c; }
   .mainnav-menu .mainnav-link.active {
     color: #fff; }
+
+.block-chooser {
+  margin-top: 5%; }
+
+.inactive-block {
+  opacity: 0.25; }
+  .inactive-block a {
+    cursor: pointer; }
+
+.nci-ctablock {
+  border: 10px solid orange; }
+  .nci-ctablock img {
+    display: block;
+    padding-bottom: 12px; }
+  .nci-ctablock a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "proxima-nova-b", Arial, sans-serif;
+    padding-top: 8px;
+    color: #fff; }
+
+.nci-ctablock-ips {
+  border-color: #00c4b3;
+  background-color: #00c4b3; }
+
+.nci-ctablock-afs {
+  border-color: #76236c;
+  background-color: #76236c; }
+
+.nci-ctablock-fgs {
+  border-color: #f18a00;
+  background-color: #f18a00; }
+
+.nci-ctablock-cfs {
+  border-color: #00b2e3;
+  background-color: #00b2e3; }
 
 .subnav-menu {
   border-right: 1px solid #cecece; }
