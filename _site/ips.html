@@ -67,28 +67,6 @@
 
   <body>
     <!-- Dark mode saved -->
-    <script>
-      function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(";");
-        for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == " ") {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-
-      if (getCookie("darkmode") === "1") {
-        var body = document.getElementsByTagName("body")[0];
-        body.className += " darkmode";
-      }
-    </script>
     <div class="page-wrap"><header class="container text-center">
   <img src="/media/top-logos.png" alt="logos for UC Davis and DDS" />
   <h1>NCI Interactive Dashboard</h1>
@@ -167,6 +145,7 @@
         role="tab"
         aria-controls="systemperformance"
         aria-selected="false"
+        onclick="accessculturalViz();"
       >
         System Performance
       </button>
@@ -219,7 +198,7 @@
         id="mentalillness-tab"
         data-bs-toggle="tab"
         data-bs-target="#mentalillness"
-        data-viz-id="viz1617136322558"
+        data-viz="viz1617136322558"
         type="button"
         role="tab"
         aria-controls="mentalillness"
@@ -234,6 +213,8 @@
         id="diagnoses-tab"
         data-bs-toggle="tab"
         data-bs-target="#diagnoses"
+        data-viz="1619562853640"
+        data-url="https://public.tableau.com/views/nci3_ips_demographics-diagnoses/nci3-ips-demographics-diagnoses?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="diagnoses"
@@ -325,7 +306,9 @@
       id="diagnoses"
       role="tabpanel"
       aria-labelledby="diagnoses-tab"
-    ></div>
+    >
+      <div id="viz1619562853640"></div>
+    </div>
     <div
       class="tab-pane fade"
       id="health"
@@ -358,6 +341,15 @@
     ></div>
   </div>
 </div>
+<!-- <script type="text/javascript">
+  $("#diagnoses-tab").click(function () {
+    var containerDiv = document.getElementById("viz1619562853640"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_demographics-diagnoses/nci3-ips-demographics-diagnoses?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script> -->
 
     </div>
     <div
@@ -379,6 +371,7 @@
         data-bs-toggle="tab"
         data-bs-target="#accessculturalcompetencyservicecoordination"
         data-viz="1618955625474"
+        data-url="https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="accessculturalcompetencyservicecoordination"
@@ -399,6 +392,7 @@
         role="tab"
         aria-controls="servicesreceived"
         aria-selected="false"
+        onclick="sreceivedViz();"
       >
         Services Received
       </button>
@@ -416,6 +410,7 @@
         role="tab"
         aria-controls="servicesneeded"
         aria-selected="false"
+        onclick="sneededViz();"
       >
         Services Needed
       </button>
@@ -427,7 +422,9 @@
       id="accessculturalcompetencyservicecoordination"
       role="tabpanel"
       aria-labelledby="accessculturalcompetencyservicecoordination-tab"
-    ></div>
+    >
+      <div id="viz1618955625474" style="width: 100%; height: 1427px"></div>
+    </div>
     <div
       class="tab-pane fade"
       id="servicesreceived"
@@ -446,19 +443,34 @@
     </div>
   </div>
 </div>
-<!-- <script type="text/javascript">
-  function initViz() {
-    const vizID = $(this).attr("data-viz");
-    const vizURL = $(this).attr("data-url");
-    var $visDiv = $("#viz" + vizID);
-    var containerDiv = document.getElementById("#viz" + vizID);
-    var viz = new tableau.Viz(containerDiv, vizURL);
-    if (containerDiv.is(":empty")) {
-      containerDiv.append(vizURL);
-    }
-  }
-</script> -->
 
+<script type="text/javascript">
+  function sreceivedViz() {
+    var containerDiv = document.getElementById("viz1618956000028"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system-received/nci3-ips-system-received?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
+<script type="text/javascript">
+  function sneededViz() {
+    var containerDiv = document.getElementById("viz1618956248111"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system-need/nci3-ips-system-need?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
+<script type="text/javascript">
+  function accessculturalViz() {
+    var containerDiv = document.getElementById("viz1618955625474"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
 <!-- <script type="text/javascript">
   $(".subnav-link").click(function () {
     const vizID = "#viz1618956000028";
@@ -481,7 +493,7 @@
   });
 </script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(".subnav-link").click(function () {
     const vizID = $(this).attr("data-viz");
     const vizURL = $(this).attr("data-url");
@@ -491,7 +503,7 @@
 
     var viz = new tableau.Viz(containerDiv, url);
   });
-</script>
+</script> -->
 
     </div>
     <div
@@ -897,54 +909,11 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src="/js/cssbrowserselector.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
 
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
-    </script>
-    <!-- dark mode toggle -->
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script>
-      $("#dm-toggle").click(function () {
-        $("body").toggleClass("darkmode");
-        $("body").addClass("fader");
-        var isDarkMode = Cookies.get("darkmode");
-        if (isDarkMode === "1") {
-          Cookies.set("darkmode", "0", { expires: 1 });
-        } else {
-          Cookies.set("darkmode", "1", { expires: 1 });
-        }
-      });
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-157073175-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-157073175-1");
     </script>
   </body>
 </html>

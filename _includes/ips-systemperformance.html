@@ -11,6 +11,7 @@
         data-bs-toggle="tab"
         data-bs-target="#accessculturalcompetencyservicecoordination"
         data-viz="1618955625474"
+        data-url="https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="accessculturalcompetencyservicecoordination"
@@ -31,6 +32,7 @@
         role="tab"
         aria-controls="servicesreceived"
         aria-selected="false"
+        onclick="sreceivedViz();"
       >
         Services Received
       </button>
@@ -48,6 +50,7 @@
         role="tab"
         aria-controls="servicesneeded"
         aria-selected="false"
+        onclick="sneededViz();"
       >
         Services Needed
       </button>
@@ -59,7 +62,9 @@
       id="accessculturalcompetencyservicecoordination"
       role="tabpanel"
       aria-labelledby="accessculturalcompetencyservicecoordination-tab"
-    ></div>
+    >
+      <div id="viz1618955625474" style="width: 100%; height: 1427px"></div>
+    </div>
     <div
       class="tab-pane fade"
       id="servicesreceived"
@@ -78,19 +83,34 @@
     </div>
   </div>
 </div>
-<!-- <script type="text/javascript">
-  function initViz() {
-    const vizID = $(this).attr("data-viz");
-    const vizURL = $(this).attr("data-url");
-    var $visDiv = $("#viz" + vizID);
-    var containerDiv = document.getElementById("#viz" + vizID);
-    var viz = new tableau.Viz(containerDiv, vizURL);
-    if (containerDiv.is(":empty")) {
-      containerDiv.append(vizURL);
-    }
-  }
-</script> -->
 
+<script type="text/javascript">
+  function sreceivedViz() {
+    var containerDiv = document.getElementById("viz1618956000028"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system-received/nci3-ips-system-received?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
+<script type="text/javascript">
+  function sneededViz() {
+    var containerDiv = document.getElementById("viz1618956248111"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system-need/nci3-ips-system-need?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
+<script type="text/javascript">
+  function accessculturalViz() {
+    var containerDiv = document.getElementById("viz1618955625474"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
 <!-- <script type="text/javascript">
   $(".subnav-link").click(function () {
     const vizID = "#viz1618956000028";
@@ -113,7 +133,7 @@
   });
 </script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(".subnav-link").click(function () {
     const vizID = $(this).attr("data-viz");
     const vizURL = $(this).attr("data-url");
@@ -123,4 +143,4 @@
 
     var viz = new tableau.Viz(containerDiv, url);
   });
-</script>
+</script> -->

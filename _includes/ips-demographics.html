@@ -10,7 +10,7 @@
         id="mentalillness-tab"
         data-bs-toggle="tab"
         data-bs-target="#mentalillness"
-        data-viz-id="viz1617136322558"
+        data-viz="viz1617136322558"
         type="button"
         role="tab"
         aria-controls="mentalillness"
@@ -25,6 +25,8 @@
         id="diagnoses-tab"
         data-bs-toggle="tab"
         data-bs-target="#diagnoses"
+        data-viz="1619562853640"
+        data-url="https://public.tableau.com/views/nci3_ips_demographics-diagnoses/nci3-ips-demographics-diagnoses?:language=en&:display_count=y&publish=yes"
         type="button"
         role="tab"
         aria-controls="diagnoses"
@@ -116,7 +118,9 @@
       id="diagnoses"
       role="tabpanel"
       aria-labelledby="diagnoses-tab"
-    ></div>
+    >
+      <div id="viz1619562853640"></div>
+    </div>
     <div
       class="tab-pane fade"
       id="health"
@@ -149,3 +153,12 @@
     ></div>
   </div>
 </div>
+<!-- <script type="text/javascript">
+  $("#diagnoses-tab").click(function () {
+    var containerDiv = document.getElementById("viz1619562853640"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_demographics-diagnoses/nci3-ips-demographics-diagnoses?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script> -->
