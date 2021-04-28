@@ -887,7 +887,9 @@
       url =
         "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes";
 
-    var viz = new tableau.Viz(containerDiv, url);
+    if (containerDiv.innerHTML === "") {
+      var viz = new tableau.Viz(containerDiv, url);
+    }
   });
 </script>
 <script type="text/javascript">
@@ -896,7 +898,9 @@
       url =
         "https://public.tableau.com/views/nci_dashboard_3_0_ips_outcomes/nci3-ips-outcomes-satisfaction?:language=en&:display_count=y&publish=yes";
 
-    var viz = new tableau.Viz(containerDiv, url);
+    if (containerDiv.innerHTML === "") {
+      var viz = new tableau.Viz(containerDiv, url);
+    }
   });
 </script>
 <script type="text/javascript">
@@ -905,7 +909,9 @@
       url =
         "https://public.tableau.com/views/nci3_ips_hwr-healthcare/nci3-ips-hwr-healthcare?:language=en&:display_count=y&publish=yes";
 
-    var viz = new tableau.Viz(containerDiv, url);
+    if (containerDiv.innerHTML === "") {
+      var viz = new tableau.Viz(containerDiv, url);
+    }
   });
 </script>
 <script>
@@ -914,7 +920,9 @@
       url =
         "https://public.tableau.com/views/nci3_ips_demographics-mental/nci3-ips-demographics-mental?:language=en&:display_count=y&publish=yes";
 
-    var viz = new tableau.Viz(containerDiv, url);
+    if (containerDiv.innerHTML === "") {
+      var viz = new tableau.Viz(containerDiv, url);
+    }
   }
 </script>
 
