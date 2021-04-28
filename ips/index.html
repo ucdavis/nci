@@ -63,7 +63,6 @@ pagecolor: ips
         role="tab"
         aria-controls="systemperformance"
         aria-selected="false"
-        onclick="accessculturalViz();"
       >
         System Performance
       </button>
@@ -132,3 +131,39 @@ pagecolor: ips
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $("#systemperformance-tab").click(function () {
+    var containerDiv = document.getElementById("viz1618955625474"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script>
+<script type="text/javascript">
+  $("#individualoutcomes-tab").click(function () {
+    var containerDiv = document.getElementById("viz1619644334852"),
+      url =
+        "https://public.tableau.com/views/nci_dashboard_3_0_ips_outcomes/nci3-ips-outcomes-satisfaction?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script>
+<script type="text/javascript">
+  $("#healthwelfarerights-tab").click(function () {
+    var containerDiv = document.getElementById("viz1619644409846"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_hwr-healthcare/nci3-ips-hwr-healthcare?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  });
+</script>
+<script>
+  function initViz() {
+    var containerDiv = document.getElementById("viz1617136322558"),
+      url =
+        "https://public.tableau.com/views/nci3_ips_demographics-mental/nci3-ips-demographics-mental?:language=en&:display_count=y&publish=yes";
+
+    var viz = new tableau.Viz(containerDiv, url);
+  }
+</script>
