@@ -103,6 +103,19 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <script src="/js/cssbrowserselector.js"></script>
+    <script type="text/javascript">
+      $(".subnav-link").click(function () {
+        const vizID = $(this).attr("data-viz");
+        const vizURL = $(this).attr("data-url");
+        const divID = "viz" + vizID;
+
+        const containerDiv = document.getElementById(divID);
+
+        if (containerDiv.innerHTML === "") {
+          var viz = new tableau.Viz(containerDiv, vizURL);
+        }
+      });
+    </script>
 
     <script>
       $(function () {
