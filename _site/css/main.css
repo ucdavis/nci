@@ -377,3 +377,6 @@ footer {
 .ips-color .featured-image img {
   border-top: 16px solid #00c4b3;
   border-right: 16px solid #00c4b3; }
+
+.public .tab-toolbar {
+  display: none; }
