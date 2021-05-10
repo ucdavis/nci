@@ -7,7 +7,7 @@ pagecolor: ips
 
 <div class="module-intro">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-7">
       <h1>{{ page.title }}</h1>
       <p class="lede">
         National Core Indicators In-Person Survey for the State of California.
@@ -16,19 +16,40 @@ pagecolor: ips
         “The NCI In-Person Survey is administered to individuals with a
         developmental disability who receive at least one service other than
         case management.”
-      </p>
-      <p class="instructions">
-        To visualize data* select the 1. year, 2. topic area, 3. survey item,
-        and 4. regional center. Location can also be selected using the map.
-        Charts will automatically update. If data is unavailable, refresh the
-        page or make new selections.
         <br />
-        <br />
-        Export views of the data by selecting the “Download” icon in the lower
-        right footer of the dashboard.
+        (National Child Family Survey Report, NASDDDS & HSRI)
       </p>
+      <p>
+        <b
+          >For optimal performance, please use supported browsers Edge, Chrome,
+          Firefox, or Safari with the most recent updates installed.</b
+        >
+      </p>
+
+      <div class="instructions">
+        <p>
+          To get started, choose a survey section and topic, and make selections
+          for:
+        </p>
+        <ol>
+          <li>Survey question</li>
+          <li>Regional center</li>
+          <li>Year</li>
+        </ol>
+        <p>
+          Year Optional filters are available to explore responses based on
+          demographic characteristics. Regional center can also be selected by
+          clicking on the map. Charts will automatically update.
+        </p>
+        <p>
+          Export views of the data as an image or a PDF by selecting the
+          corresponding download button in the lower right corner of the
+          dashboard view.
+        </p>
+      </div>
     </div>
-    <div class="col-md-5 offset-md-1 featured-image">
+
+    <div class="col-md-4 offset-md-1 featured-image">
       <img
         class="img-fluid"
         src="/media/ips-main.jpg"
@@ -135,7 +156,7 @@ pagecolor: ips
   $("#systemperformance-tab").click(function () {
     var containerDiv = document.getElementById("viz1618955625474"),
       url =
-        "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one?:language=en&:display_count=y&publish=yes";
+        "https://public.tableau.com/views/nci3_ips_system/nci3-ips-system-one";
 
     if (containerDiv.innerHTML === "") {
       var viz = new tableau.Viz(containerDiv, url);
@@ -146,7 +167,7 @@ pagecolor: ips
   $("#individualoutcomes-tab").click(function () {
     var containerDiv = document.getElementById("viz1619644334852"),
       url =
-        "https://public.tableau.com/views/nci_dashboard_3_0_ips_outcomes/nci3-ips-outcomes-satisfaction?:language=en&:display_count=y&publish=yes";
+        "https://public.tableau.com/views/nci3_ips_outcomes-satisfaction/nci3-ips-outcomes-satisfaction";
 
     if (containerDiv.innerHTML === "") {
       var viz = new tableau.Viz(containerDiv, url);
@@ -157,7 +178,7 @@ pagecolor: ips
   $("#healthwelfarerights-tab").click(function () {
     var containerDiv = document.getElementById("viz1619644409846"),
       url =
-        "https://public.tableau.com/views/nci3_ips_hwr-healthcare/nci3-ips-hwr-healthcare?:language=en&:display_count=y&publish=yes";
+        "https://public.tableau.com/views/nci3_ips_hwr-healthcare/nci3-ips-hwr-healthcare";
 
     if (containerDiv.innerHTML === "") {
       var viz = new tableau.Viz(containerDiv, url);
@@ -168,7 +189,7 @@ pagecolor: ips
   function initViz() {
     var containerDiv = document.getElementById("viz1617136322558"),
       url =
-        "https://public.tableau.com/views/nci3_ips_demographics-mental/nci3-ips-demographics-mental?:language=en&:display_count=y&publish=yes";
+        "https://public.tableau.com/views/nci3_ips_demographics-characteristics/nci3-ips-demographics-characteristics";
 
     if (containerDiv.innerHTML === "") {
       var viz = new tableau.Viz(containerDiv, url);

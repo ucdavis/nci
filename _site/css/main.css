@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: "proxima-nova-r", Arial, sans-serif;
-  color: rgba(31, 31, 31, 0.99); }
+  color: rgba(33, 33, 33, 0.99); }
 
 ul.no-list-style,
 ol.no-list-style {
@@ -41,6 +41,9 @@ ol.no-list-style {
 
 p {
   line-height: 1.6; }
+  p.lede {
+    font-size: 1.2rem;
+    color: rgba(31, 31, 31, 0.8); }
 
 h1,
 h2,
@@ -49,6 +52,15 @@ h4,
 h5,
 h6 {
   font-family: "proxima-nova-r", Arial, sans-serif; }
+
+.tagline {
+  font-size: 1rem;
+  max-width: 40vw;
+  margin: 0 auto;
+  text-align: center; }
+
+a {
+  color: #046b99; }
 
 *,
 *:after,
@@ -81,9 +93,32 @@ body {
   box-shadow: 0 0 0 1px rgba(49, 49, 93, 0.03), 0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
 
 header {
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 2%; }
+  header h1 {
+    font-family: "proxima-nova-b", Arial, sans-serif;
+    font-size: 2.2rem; }
   header img {
     margin-bottom: 1%; }
+
+#breadcrumbs {
+  font-size: 1.2rem;
+  font-family: "proxima-nova-b", Arial, sans-serif;
+  color: #ccc;
+  margin-bottom: 2%;
+  background-image: linear-gradient(to right, #046b99 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+  background-position: center bottom 4%;
+  background-origin: padding-box;
+  text-decoration: none !important; }
+  #breadcrumbs a {
+    font-family: "proxima-nova-r", Arial, sans-serif;
+    margin-right: 12px; }
+  #breadcrumbs .bc-nonlink {
+    color: rgba(33, 33, 33, 0.99);
+    margin-left: 12px; }
 
 .container-sm {
   margin: 0 auto;
@@ -153,7 +188,7 @@ header {
   .subnav-menu li {
     border-bottom: 1px solid #cecece; }
   .subnav-menu .subnav-link {
-    color: rgba(31, 31, 31, 0.99);
+    color: rgba(33, 33, 33, 0.99);
     border-right: 4px solid rgba(255, 255, 255, 5.0e-05);
     border-radius: 0;
     border: none;
@@ -192,6 +227,9 @@ footer {
 
 .container {
   max-width: 1140px; }
+
+.module-intro h1 {
+  font-size: 1.8rem; }
 
 .btn {
   box-shadow: 0 0 0 1px rgba(49, 49, 93, 0.03), 0 2px 5px 0 rgba(49, 49, 93, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08); }
@@ -359,7 +397,7 @@ footer {
   color: #481268; }
 
 .primary-font {
-  color: rgba(31, 31, 31, 0.99); }
+  color: rgba(33, 33, 33, 0.99); }
 
 .secondary-font {
   color: rgba(31, 31, 31, 0.8); }

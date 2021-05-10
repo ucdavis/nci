@@ -45,29 +45,47 @@ body {
 .head_divider {
   background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
   height: 26px;
-  // i {
-  //   color:#fff;
-  //   background-color: $golden-lupine;
-  //   height:50px;
-  //   width:50px;
-  //   font-size:2.8rem;
-  //   border-radius:50%;
-  // }
 }
-// .content-wrap {
-//   background-color: #fff;
-//   border-radius: 2px;
-//   border: $borders;
-//   padding: 16px;
-// }
+
 .tableau-wrapper {
   margin-top: 5%;
   box-shadow: $box-shadow;
 }
 header {
+  h1 {
+    font-family: $sans-bold;
+    font-size: 2.2rem;
+  }
   margin-top: 2%;
   img {
     margin-bottom: 1%;
+  }
+  margin-bottom: 2%;
+  // border-bottom: 1px solid $borders;
+  padding-bottom: 2%;
+}
+#breadcrumbs {
+  font-size: 1.2rem;
+  font-family: $sans-bold;
+  color: #ccc;
+  margin-bottom: 2%;
+  background-image: linear-gradient(
+    to right,
+    $primary-color 50%,
+    transparent 50%
+  );
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
+  background-position: center bottom 4%;
+  background-origin: padding-box;
+  text-decoration: none !important;
+  a {
+    font-family: $sans-reg;
+    margin-right: 12px;
+  }
+  .bc-nonlink {
+    color: $primary-font;
+    margin-left: 12px;
   }
 }
 .container-sm {
@@ -212,4 +230,9 @@ footer {
 }
 .container {
   max-width: 1140px;
+}
+.module-intro {
+  h1 {
+    font-size: 1.8rem;
+  }
 }

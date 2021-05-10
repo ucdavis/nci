@@ -19,6 +19,10 @@ ol {
 }
 p {
   line-height: 1.6;
+  &.lede {
+    font-size: 1.2rem;
+    color: $secondary-font;
+  }
 }
 h1,
 h2,
@@ -27,4 +31,13 @@ h4,
 h5,
 h6 {
   font-family: $sans-reg;
+}
+.tagline {
+  font-size: 1rem;
+  max-width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  color: $primary-color;
 }
