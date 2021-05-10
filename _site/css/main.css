@@ -100,22 +100,22 @@ header {
     font-family: "proxima-nova-b", Arial, sans-serif;
     font-size: 2.2rem; }
   header img {
-    margin-bottom: 1%; }
+    margin-bottom: 3%; }
 
 #breadcrumbs {
   font-size: 1.2rem;
   font-family: "proxima-nova-b", Arial, sans-serif;
   color: #ccc;
-  margin-bottom: 2%;
-  background-image: linear-gradient(to right, #046b99 50%, transparent 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 1px;
-  background-position: center bottom 4%;
-  background-origin: padding-box;
-  text-decoration: none !important; }
+  margin-bottom: 2%; }
   #breadcrumbs a {
     font-family: "proxima-nova-r", Arial, sans-serif;
-    margin-right: 12px; }
+    margin-right: 12px;
+    background-image: linear-gradient(to right, #046b99 50%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 1px;
+    background-position: center bottom 4%;
+    background-origin: padding-box;
+    text-decoration: none !important; }
   #breadcrumbs .bc-nonlink {
     color: rgba(33, 33, 33, 0.99);
     margin-left: 12px; }

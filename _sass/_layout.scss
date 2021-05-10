@@ -58,7 +58,7 @@ header {
   }
   margin-top: 2%;
   img {
-    margin-bottom: 1%;
+    margin-bottom: 3%;
   }
   margin-bottom: 2%;
   // border-bottom: 1px solid $borders;
@@ -69,19 +69,20 @@ header {
   font-family: $sans-bold;
   color: #ccc;
   margin-bottom: 2%;
-  background-image: linear-gradient(
-    to right,
-    $primary-color 50%,
-    transparent 50%
-  );
-  background-repeat: repeat-x;
-  background-size: 2px 1px;
-  background-position: center bottom 4%;
-  background-origin: padding-box;
-  text-decoration: none !important;
+
   a {
     font-family: $sans-reg;
     margin-right: 12px;
+    background-image: linear-gradient(
+      to right,
+      $primary-color 50%,
+      transparent 50%
+    );
+    background-repeat: repeat-x;
+    background-size: 2px 1px;
+    background-position: center bottom 4%;
+    background-origin: padding-box;
+    text-decoration: none !important;
   }
   .bc-nonlink {
     color: $primary-font;
